@@ -213,6 +213,7 @@ function errorFunc(errorId, msg, errorClass) {
 
   //close opened modal
   span.onclick = function() {
+    video.src = "";
     modal.classList.remove("modalToggle");
     document.body.classList.remove("body");
   };
