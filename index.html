@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>KBMOS-Weather</title>
+  <meta name="description" lang="en" content="KBMOS-weather provides detailed information about the weather with rich user interface" />
+  <meta name="keywords" lang="en" content="weather, city, search, climate, current, rain, images" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/vendor/fonts.css" />
+  <link href="assets/vendor/fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+  <!--container starts here-->
+  <div class="container">
+    <!--header starts here-->
+    <header class="cf">
+      <div class="wrapper cf">
+        <a href="index.html" title="logo" class="logo">
+          <div class="logoImage">
+            <img src="assets/images/icons/icon-3.svg" alt="logo" />
+          </div>
+          <div class="logoText">
+            <h1>KBMOS-Weather</h1>
+            <span>Being prepared for any weather</span>
+          </div>
+        </a>
+        <div class="hamburger cf" id="hamburger">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <!--nav starts here-->
+        <nav class="mainNav cf">
+          <ul class="menu cf">
+            <li ><a href="index.html" title="home" class="active">home</a></li>
+            <li><a href="#Live-camera" title="news" id="liveId">Live news</a></li>
+            <li><a href="#listtt" title="news" id="newsArticle">Articles</a></li>
+            <li><a href="#use" title="news" id="UsefulLink">Useful Links</a></li>
+            <!-- <li><a href="#FIXME" title="live cameras">Live cameras</a></li> -->
+            <li><a href="#usePhoto" title="photos" id="photoGallery">Gallery</a></li>
+            <!-- <li><a href="#FIXME" title="contact">contact</a></li> -->
+          </ul>
+        </nav>
+        <!--nav ends here-->
+      </div>
+    </header>
+    <!--header ends here-->
+    <!--main starts here-->
+    <main>
+      <!--main banner starts here-->
+      <div class="main-banner">
+        <div class="wrapper">
+          <form action="#FIXME" method="GET" name="RegForm">
+            <div id="formBar">
+              <input type="text" name="location" id="location" placeholder="Enter your City-Name..." />
+              <input type="submit" value="Find" id="submit" />
+            </div>
+          </form>
+          <!--weather card starts here-->
+          <div class="weather-card">
+            <div class="weather-head cf">
+              <span class="day">Monday</span>
+              <span class="date cf">6 Oct</span>
+            </div>
+            <div class="weather-body">
+              <span class="location">Mumbai</span>
+              <div class="degree">
+                <span class="num">23<sup>o</sup>C</span>
+                <span class="weather-image">
+                  <img src="assets/images/icons/icon-1.svg" id="weather-icon" alt="weather icon" />
+                </span>
+              </div>
+              <span class="weather-details"><img src="assets/images/icon-umberella.png" alt="percipitation" /><span
+                  class="humidity">20%</span>
+              </span>
+              <span class="weather-details"><img src="assets/images/icon-wind.png" alt="wind" /><span
+                  class="wind">18km/h</span></span>
+              <span class="weather-details"><img src="assets/images/icon-compass.png" alt="direction" /><span
+                  class="direction">East</span></span>
+            </div>
+          </div>
+          <!--weather card ends here-->
+        </div>
+      </div>
+      <!--main banner ends here-->
+      <!--live camera starts here-->
+      <section class="live-camera" id="Live-camera">
+        <div class="wrapper">
+          <h2>live Weather News</h2>
+          <ul class="camera-row">
+            <li class="camera-coloumn">
+              <figure class="live-camera-cover" id="video1">
+                <img src="assets/images/screenCloud.png" alt="video" />
+              </figure>
+              <h3 class="camera-location">The World Live</h3>
+              <span class="camera-date">Earth TV</span>
+            </li>
+            <li class="camera-coloumn">
+              <figure class="live-camera-cover" id="video2">
+                <img src="assets/images/ScreenStars.png" alt="video" />
+              </figure>
+              <h3 class="camera-location">IIS tracker Live Feed</h3>
+              <span class="camera-date">NASA Live</span>
+            </li>
+            <li class="camera-coloumn">
+              <figure class="live-camera-cover" id="video3">
+                <img src="assets/images/ScreenLight.png" alt="video" />
+              </figure>
+              <h3 class="camera-location">Hurricane Tracker</h3>
+              <span class="camera-date">Force Thirteen</span>
+            </li>
+            <li class="camera-coloumn">
+              <figure class="live-camera-cover" id="video4">
+                <img src="assets/images/ScreenSpace.png" alt="video" />
+              </figure>
+              <h3 class="camera-location">Earth view Live</h3>
+              <span class="camera-date">ISS</span>
+            </li>
+          </ul>
+          <div id="myModal" class="modal">
+            <div class="modal-scroll">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- <video id="myVideo" controls autoplay muted> -->
+                  <iframe id="myVideo" title="news" width="100%" height="100%" src="https://www.youtube.com/embed/JlqrHo-Rsi0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <!-- <source src="assets/videos/video1.mp4" type="video/mp4" />
+                </video> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--live camera ends here-->
+      <!--list of content starts here-->
+      <div class="list-of-content" id="listtt">
+        <div class="wrapper">
+          <ul class="list-content-row">
+            <li class="list-content-coloumn">
+              <article>
+                <span class="list-content-number"><a href="#FIXME" title="number"> 08.10</a></span>
+                <h3><a href="#FIXME" title="article heading" id="coll1">At 13.7°C, minimum temperature for October lowest in a decade</a></h3>
+                <p>
+                  Previously, the lowest night time temperature recorded in October was in 2009, with a reading of 13.5 degrees Celsius on October 26 and 28, as per IMD data. Kuldeep Srivastava, head of IMD’s regional weather forecasting centre, said,
+                </p>
+                <p class="collapse" id="collapse1">
+                  “The sky is clear at night as there are no clouds and wind speed is calm. These two conditions help in increasing the earth’s radiation — during day time, the earth heats up and in the absence of clouds and due to calm wind, there is fast cooling at night time.”
+
+                </p>
+                <span class="list-arrow"><a href="#FIXME" title="show more"><img src="assets/images/arrow.png"
+                      alt="arrow" /></a></span>
+              </article>
+            </li>
+            <li class="list-content-coloumn">
+              <article>
+                <span class="list-content-number"><a href="#FIXME" title="number"> 11.00</a></span>
+                <h3><a href="#FIXME" title="article heading" id="coll2">Weather Forecast Live Updates: IMD says low pressure over Arabian Sea intensified into depression</a>
+                </h3>
+                <p>
+                  It said light to moderate rainfall at a few places is very likely over coastal districts of Saurashtra and Kutch during the next 24 hours. Sea conditions will be rough to very rough over east-central and adjoining northeast the Arabian Sea on October 17 and over central and northwest Arabian Sea on October 18.
+                </p>
+                <p class=" collapse" id="collapse2">
+                  A fresh low-pressure area is likely to trigger heavy to very heavy rainfall in several parts of Odisha early next week, PTI quoted weather officials as saying on Friday. A low-pressure area is likely to form over the central Bay of Bengal around October 19 and become more marked during the subsequent 24 hours, the weather department predicted. This will be the tenth low-pressure system over the Bay of Bengal since the beginning of August and the third this month.
+                </p>
+                <span class="list-arrow"><a href="#FIXME" title="show more"><img src="assets/images/arrow.png"
+                      alt="arrow" /></a></span>
+              </article>
+            </li>
+            <li class="list-content-coloumn">
+              <article>
+                <span class="list-content-number"><a href="#FIXME" title="number"> 15.30</a></span>
+                <h3><a href="#FIXME" title="article heading" id="coll3">Normalcy to return in Telangana; heavy rains to continue in Maharashtra, Gujarat</a>
+                </h3>
+                <p>
+                  The India Meteorological Department Friday predicted heavy rainfall over parts of Gujarat and Maharashtra. Over the next 2 days, rainfall is likely to occur over north peninsular India and adjoining areas as well as east Rajasthan and south Uttar Pradesh. The rest of the country will experience dry weather conditions.
+                </p>
+                <p class="collapse" id="collapse3">
+
+                    Hyderabad and Telangana will slowly return to normalcy after torrential rains triggered one of the worst floods in recent history that claimed 50 lives. The Disaster Response Force (DRF) working in the 2 states have relocated over 44,000 people in 64 relief camps. Telangana Chief Minister K Chandrasekhar Rao wrote to Prime Minister Narendra Modi on Thursday and sought funds to combat the flood situation in the state. “Telangana incurred losses worth Rs. 5,000 crores due to heavy rains and flash floods,” the chief minister said in his letter. 
+
+                </p>
+                <span class="list-arrow"><a href="#FIXME" title="show more"><img src="assets/images/arrow.png"
+                      alt="arrow" /></a></span>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--list of content ends here-->
+      <!--features starts here-->
+      <section class="features" id="use">
+        <div class="wrapper cf">
+          <div class="app-feature">
+            <h2>Useful Links</h2>
+            <ul>
+              <li>
+                <span class="feature-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <h3><a href="https://mausam.imd.gov.in/imd_latest/contents/all_india_forcast_bulletin.php" title="app-feature" target="_blank">India Meteorological Department</a></h3>
+                <p>
+                  All India Weather Forecast Bulletin under Ministery of Earth and Sciences, Government of India.
+                </p>
+              </li>
+              <li>
+                <span class="feature-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <h3><a href="https://www.skymetweather.com/content/stories/weather-news-and-analysis/" title="app-feature" target="_blank">Sky Met Weather Forecasting Service</a></h3>
+                <p>
+                  All India Weather Forecast Bulletin
+                </p>
+              </li>
+              <li>
+                <span class="feature-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <h3><a href="https://www.weather-ind.com/en" title="app-feature" target="_blank">Weather Atlas</a></h3>
+                <p>
+                  weather forecast and Climate information.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="weather-analysis">
+            <h2>weather analysis</h2>
+            <ul>
+              <li>
+                <span class="weather-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <a href="assets/pdf/AIWFB.pdf" title="analysis" target="_blank">ALL INDIA WEATHER SUMMARY AND FORECAST BULLETIN </a>
+              </li>
+              <li>
+                <span class="weather-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <a href="assets/images/reigonMap.png" title="analysis" target="_blank">REGION-WISE MONTHLY RAINFALL MAP</a>
+              </li>
+              <li>
+                <span class="weather-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <a href="assets/images/talukaMap.png" title="analysis" target="_blank">TALUKA-WISE MONTHLY RAINFALL MAP</a>
+              </li>
+              <li>
+                <span class="weather-arrow"><img src="assets/images/arrow.png" alt="arrow" /></span>
+                <a href="assets/images/districtMap.png" title="analysis" target="_blank">DISTRICT-WISE MONTHLY RAINFALL MAP</a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="awesome-pic cf" id="usePhoto">
+            <h2>Gallery</h2>
+            <ul>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img1.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img2.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img3.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img4.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img5.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img6.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img7.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img8.jpg" alt="pic" /></a>
+              </li>
+              <li class="img-modal">
+                <a href="#FIXME" title="pics"><img src="assets/images/img9.jpg" alt="pic" /></a>
+              </li>
+            </ul>
+            <div id="myModal-img" class="modal">
+              <div class="modal-scroll">
+                <div class="modal-content">
+                  <span class="close closeImg">&times;</span>
+                  <img src="assets/images/thumb-1.jpg" alt="img" id="myImg" class="myImg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--features ends here-->
+    </main>
+    <!--main ends here-->
+    <!--footer starts here-->
+    <footer>
+      <div class="wrapper">
+        <form action="#FIXME" method="GET" name="SubForm">
+          <div id="emailBar">
+            <input type="email" name="email" id="email" placeholder="Enter your email to subscribe..." />
+            <input type="submit" name="subscribe" value="Subscribe" id="subscribe" />
+          </div>
+        </form>
+        <ul class="social-icons">
+          <li>
+            <a href="#FIXME" class="facebook ficon" title="facebook">facebook</a>
+          </li>
+          <li>
+            <a href="#FIXME" class="twitter ficon" title="Twitter">twitter</a>
+          </li>
+          <li>
+            <a href="#FIXME" class="google ficon" title="google">google</a>
+          </li>
+          <li>
+            <a href="#FIXME" class="pintrest ficon"  title="pintrest">pintrest</a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <p>
+            <a href="#FIXME" title="copyright-info">KBMOS-Weather 2020.</a>
+            The information herin is provided through available public domains.No rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--footer ends here-->
+  </div>
+  <!--container ends here-->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
