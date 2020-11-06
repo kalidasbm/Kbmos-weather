@@ -30,7 +30,7 @@ function errorFunc(errorId, msg, errorClass) {
 }
 
 //=> To see which html page is currently accessing javascript
-if (document.URL.includes("index.html")) {
+
   //set autocomplete => off for location and email
   document.getElementById("location").setAttribute("autocomplete", "off");
   document.getElementById("email").setAttribute("autocomplete", "off");
@@ -251,30 +251,7 @@ if (document.URL.includes("index.html")) {
 
 
 
-} else if (document.URL.includes("photo.html")) {
-  //set autocomplete => off for email
-  document.getElementById("email").setAttribute("autocomplete", "off");
-  var spanGallery = document.querySelector(".closeGallery"),
-    galleryId = document.getElementById("myModal-gallery"),
-    gallery = document.getElementById("myGallery"),
-    galleryModal = document.querySelectorAll(".gallery-image");
 
-  //show gallery image clicked as a modal
-  galleryModal.forEach(galleryFunction);
-  function galleryFunction(item, index) {
-    galleryModal[index].addEventListener("click", function() {
-      gallery.src = "assets/images/" + this.id + ".jpg";
-      galleryId.classList.add("modalToggle");
-      document.body.classList.add("body");
-    });
-  }
-
-  //close opened gallery modal
-  spanGallery.onclick = function() {
-    galleryId.classList.remove("modalToggle");
-    document.body.classList.remove("body");
-  };
-}
 
 //=> redirect user to mail client with information filled when user wants to subscribe
 var subscribe = document.getElementById("subscribe");
