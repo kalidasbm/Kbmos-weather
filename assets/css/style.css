@@ -573,7 +573,7 @@ header .active {
   position: fixed;
   z-index: 100;
   left: 0;
-  top: 0;
+  top: 9%;
   background-color: #00106e33;
 }
 
@@ -598,7 +598,7 @@ header .active {
 
 iframe { 
   width: 100%;
-  height: 80vh;
+  height: 50vh;
  }
 .myImg { width: 100%; }
 .modalOpen { overflow-y: hidden; }
